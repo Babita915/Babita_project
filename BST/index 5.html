@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>CSS Grid Layout - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Image Grid</h1>
+            <p>Click on the button to change the grid view.</p>
+            <div class="icons">
+                <i class="fa fa-square" onclick="full()"></i>
+                 <i class="fa fa-th-large" onclick="twoColumn()"></i>
+                  <i class="fa fa-th" onclick="fourColumn()"></i>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="column1">
+                <img src="a1.jpeg">
+                <img src="a2.jpeg">
+                <img src="a3.jpeg">
+                <img src="a4.jpeg">
+                <img src="a5.jpeg">
+                <img src="a6.jpeg">
+                <img src="a7.jpeg">
+                <img src="a8.jpeg">
+                <img src="a9.jpeg">
+                <img src="a10.jpeg">
+            </div>
+
+            <div id="column2">
+                <img src="a11.jpeg">
+                <img src="a12.jpeg">
+                <img src="a13.jpeg">
+                <img src="a14.jpeg">
+                <img src="a15.jpeg">
+                <img src="a16.jpeg">
+                <img src="a17.jpeg">
+                <img src="a18.jpeg">
+                <img src="a19.jpeg">
+                <img src="a20.jpeg">
+            </div>
+
+            <div id="column3">
+                <img src="a21.jpeg">
+                <img src="a22.jpeg">
+                <img src="a23.jpeg">
+                <img src="a24.jpeg">
+                <img src="a25.jpeg">
+                <img src="a26.jpeg">
+                <img src="a27.jpeg">
+                <img src="a28.jpeg">
+                <img src="a2.jpeg">
+                <img src="a1.jpeg">
+            </div>
+
+            <div id="column4">
+                <img src="a1.jpeg">
+                <img src="a2.jpeg">
+                <img src="a3.jpeg">
+                <img src="a4.jpeg">
+                <img src="a5.jpeg">
+                <img src="a6.jpeg">
+                <img src="a7.jpeg">
+                <img src="a8.jpeg">
+                <img src="a9.jpeg">
+                <img src="a10.jpeg">
+            </div>
+        </div>
+        <script>
+            function full() {
+                document.getElementById("column1").style.width = '100%';
+                document.getElementById("column2").style.width = '100%';
+                document.getElementById("column3").style.width = '100%';
+                document.getElementById("column4").style.width = '100%';
+            }
+
+              function twoColumn() {
+                document.getElementById("column1").style.width = '50%';
+                document.getElementById("column2").style.width = '50%';
+                document.getElementById("column3").style.width = '50%';
+                document.getElementById("column4").style.width = '50%';
+            }
+
+             function fourColumn() {
+                document.getElementById("column1").style.width = '25%';
+                document.getElementById("column2").style.width = '25%';
+                document.getElementById("column3").style.width = '25%';
+                document.getElementById("column4").style.width = '25%';
+            }
+        </script>
+    </body>
+</html>
