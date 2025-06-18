@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Awesome Web Page Design - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id ="hero">
+            <div class="navbar">
+                <img src="a3.jpg" class="logo">
+                <div class="user">
+                    <button type="button">Explore</button>
+                    <img src="a4.jpg">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="info">
+                    <h1>DISCOVER</h1>
+                    <p>Lorem ipsum delor sit amet, consectrtur adipiscing
+                        elit. Praesent vestubulum nulla <br>id etis rhoncus, at viverra 
+                        velit tempor.
+                    </p>
+                    <input type="text" placeholder="Search">      
+                </div>
+            </div>
+            <div class="slider">
+                <img src="a5.jpg" id="prev">
+                <div class="preview">
+                    <img src="a7.jpg" class="active thumbnail">
+                    <img src="a8.jpg" class="thumbnail">
+                    <img src="a9.jpg" class="thumbnail">
+                    <img src="a10.jpg" class="thumbnail">
+                    <img src="a11.jpg" class="thumbnail">
+                </div>
+                <img src="a6.jpg" id="next">
+            </div>
+
+        </div>
+
+        <script>
+            var prev = document.getElementById("prev");
+            var next = document.getElementById("next");
+            var thumbnail = document.getElementsByClassName("thumbnail");
+            var hero = document.getElementById("hero");
+
+            var backgroundImg = new Array(
+                "a7.jpg",
+                "a8.jpg",
+                "a9.jpg",
+                "a10.jpg",
+                "a11.jpg"
+            );
+            let i = 0;
+            next.onclick = function() {
+                if(i < 4){
+                hero.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+                thumbnail[i+1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i++;
+                }
+            }
+
+            prev.onclick = function() {
+                if(i > 0){
+                hero.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+                thumbnail[i-1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i--;
+                }
+            }
+        </script>
+
+    </body>
+</html>
