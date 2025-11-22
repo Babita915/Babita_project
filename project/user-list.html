@@ -1,0 +1,35 @@
+<form [formGroup]="userForm" (ngSubmit)="addUser()">
+  <label>Name :</label>
+  <input formControlName="name" placeholder="Enter a Name">
+  <br><br>
+  <label>Email :</label>
+  <input formControlName="email" placeholder="Enter a Email">
+  <br><br>
+  <label>Role :</label>
+  <input formControlName="role" placeholder="Enter a Role">
+  <br><br> 
+  <button class="btn btn-primary">Add</button>
+</form>
+<br>
+<div class="container">
+  <h2>User List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users; let i = index">
+         <td>{{i + 1}}</td> 
+         <td>{{user.name}}</td>
+         <td>{{user.email}}</td>
+         <td>{{user.role}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

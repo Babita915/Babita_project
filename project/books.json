@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "title": "javascript",
+    "author": "babita",
+    "category": 5,
+    "copies": 3,
+    "createdAt": "2025-11-20T06:43:34.857Z",
+    "updatedAt": "2025-11-20T06:43:34.857Z"
+  },
+  {
+    "id": "2",
+    "title": "hindi",
+    "author": "pinky",
+    "category": 4,
+    "copies": 3,
+    "createdAt": "2025-11-20T06:44:05.563Z",
+    "updatedAt": "2025-11-20T06:44:05.563Z"
+  },
+  {
+    "id": "3",
+    "title": "hindi",
+    "author": "pinky",
+    "category": 5,
+    "copies": 5,
+    "createdAt": "2025-11-20T06:44:44.341Z",
+    "updatedAt": "2025-11-20T06:44:44.341Z"
+  },
+  {
+    "id": "4",
+    "title": "english",
+    "author": "pinky",
+    "category": 4,
+    "copies": 5,
+    "createdAt": "2025-11-20T06:56:32.938Z",
+    "updatedAt": "2025-11-20T06:56:32.938Z"
+  },
+  {
+    "id": "5",
+    "title": "javascript",
+    "author": "babita",
+    "category": 4,
+    "copies": 3,
+    "createdAt": "2025-11-20T08:23:42.114Z",
+    "updatedAt": "2025-11-20T08:23:42.114Z"
+  }
+]

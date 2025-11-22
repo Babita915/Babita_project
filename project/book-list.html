@@ -1,0 +1,33 @@
+<div class="container">
+    <h2>Book List {{books.length}}</h2>
+    <button class="btn btn-primary" routerLink="/add">Add Book</button>
+    <br><br>
+    <table>
+        <thead>
+            <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>CategoryID</th>
+            <th>AvailableCopies</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <td>{{book.id}}</td>
+                <td>{{book.title}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.category}}</td>
+                <td>{{book.copies}}</td>
+                <td class="buttons">
+                <button class="btn btn-success" (click)="viewBook(book?.id)">View</button>
+                <button class="btn btn-primary" (click)="editBook(book?.id)">Edit</button>
+                <button class="btn btn-danger" (click)="deleteBook(book?.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Book Details</h2>
+    <div class="card">
+        <div class="card-body">
+             <p><strong>Title: </strong>{{book?.title}}</p>
+            <p><strong>Author: </strong>{{book?.author}}</p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="btn btn-success" (click)="editBook()">Edit</button>
+         <button class="btn btn-secondary" (click)="goBack()"> Back</button>
+    </div>
+</div>
+

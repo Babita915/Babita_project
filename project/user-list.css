@@ -1,0 +1,10 @@
+table th {
+    border: 1px solid black;
+}
+table th, table td {
+     border: 3px double #000;;
+}
+.buttons {
+    display: flex;
+    gap: 15px;
+}
